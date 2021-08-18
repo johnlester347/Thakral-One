@@ -11,15 +11,16 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header" id="home">
         <nav class="navbar">
             <ul class="navbar__list">
-                <li class="navbar__item"><a href="" class="navbar__link"><i class="fas fa-play navbar__logo"></i></a>
+                <li class="navbar__item"><a href="#home" class="navbar__link"><i
+                            class="fas fa-play navbar__logo"></i></a>
                 </li>
-                <li class="navbar__item"><a href="" class="navbar__link">Background & Challenge</a></li>
-                <li class="navbar__item"><a href="" class="navbar__link">Solution</a></li>
-                <li class="navbar__item"><a href="" class="navbar__link">Results & Effectiveness</a></li>
-                <li class="navbar__item"><a href="" class="navbar__link">Slideshow</a></li>
+                <li class="navbar__item"><a href="#bg" class="navbar__link">Background & Challenge</a></li>
+                <li class="navbar__item"><a href="#solution" class="navbar__link">Solution</a></li>
+                <li class="navbar__item"><a href="#solution" class="navbar__link">Results & Effectiveness</a></li>
+                <li class="navbar__item"><a href="#slideshow" class="navbar__link">Slideshow</a></li>
             </ul>
 
             <a href="#" class="navbar__button"><img src="img/download2.png" alt="download button"
@@ -43,8 +44,7 @@
         </div>
     </header>
 
-
-    <section class="about">
+    <section class="about" id="bg">
         <div class="about__text-box">
             <div class="about__content">
                 <div class="about__text">
@@ -81,13 +81,17 @@
                     Shift perceptions and re-build the Whitsunday's social currency<br> as a world-class destination.
                 </p>
             </div>
-
+            <div class="pagination"><i class="fas circle fa-circle"></i><i class="fas circle fa-circle"></i><i
+                    class="fas circle fa-circle"></i><i class="fas circle fa-circle"></i><i
+                    class="fas circle fa-circle"></i><i class="fas circle fa-circle"></i></div>
         </div>
     </section>
 
-    <section class="solution">
-        <h1 class="solution__heading">Solution</h1>
 
+
+
+    <section class="solution" id="solution">
+        <h1 class="solution__heading">Solution</h1>
         <div class="solution__main-box">
             <div class="solution__box1">
                 <p class="solution__paragraph">We knew movies rated high on the list of our target's interests and,
@@ -99,7 +103,7 @@
                 <h1 class="solution__heading1">
                     The Whitsunday.
                 </h1>
-                <h1 class="solution__heading1">
+                <h1 class="solution__heading2">
                     A movie that's waiting to be written.
                 </h1>
                 <p class="solution__paragraph">We enlisted world-renowned screenwriter Craig Pearce as Script
@@ -123,36 +127,89 @@
                     the
                     world's first crowd-sourced movie storyboard and a story universe with millions of possible
                     permutations.</p>
+                <div class="pagination"><i class="fas circle fa-circle"></i><i class="fas circle fa-circle"></i><i
+                        class="fas circle fa-circle"></i><i class="fas circle fa-circle"></i><i
+                        class="fas circle fa-circle"></i><i class="fas circle fa-circle"></i></div>
             </div>
         </div>
 
     </section>
 
 
-    <footer class="footer">
+    <footer class="footer" id="slideshow">
         <div class="middle">
-            <a href="#" class="middle__link">Video</a>
-            <a href="#" class="middle__link">Photography</a>
-            <a href="#" class="middle__link">Social</a>
-            <a href="#" class="middle__link">PR</a>
-            <a href="#" class="middle__link">Radio</a>
+            <a class="middle__link active" id="f_video">Video</a>
+            <a class="middle__link" id="photography">Photography</a>
+            <a class="middle__link" id="social">Social</a>
+            <a class="middle__link" id="pr">PR</a>
+            <a class="middle__link" id="radio">Radio</a>
         </div>
 
 
         <!-- add vide class -->
-        <div class="video">
+        <div class="deletE video">
             <img src="img/video.png" alt="video-img" class="video__img">
 
             <div class="video__text">
+                <p>A 60 second promotional movie trailer played on TV, online as pre rolls and via Facebook, to promote
+                    the movie that was waiting to be written to our movie-loving target audience, and encourage them to
+                    enter.</p>
+
+                <a class="button">View Project</a>
+            </div>
+        </div>
+        <div class="pagination"><i class="fas circle fa-circle"></i><i class="fas circle fa-circle"></i><i
+                class="fas circle fa-circle"></i><i class="fas circle fa-circle fas-active"></i><i
+                class="fas circle fa-circle"></i><i class="fas circle fa-circle"></i></div>
+
+        <!-- <div class="photography">
+            <img src="img/picture.png" alt="photography-img" class="photography__img">
+
+            <div class="photography__text">
+                <p>Shot posted on Facebook and Instagram everyday inspired thousands of entires. We reacted to the
+                    storylines as it developed in realtime, selecting and treating the next image according to the day's
+                    winning scene.</p>
+
+                <a href="#" class="button">View Project</a>
+            </div>
+        </div> -->
+
+        <!-- <div class="social">
+            <img src="img/social.png" alt="social-img" class="social__img">
+
+            <div class="social__text">
+                <p>The companies movie storyboard showcase the entire story, completely inspired by stunning images
+                    captured in the Whitsundays, with all 20 winning scenes accompanying the images.</p>
+
+                <a href="#" class="button">View Project</a>
+            </div>
+        </div> -->
+
+        <!-- <div class="pr">
+            <img src="img/pr.png" alt="pr-img" class="pr__img">
+
+            <div class="pr__text">
+                <p>We enlisted the help of Craig Peace as script supervisor, who was tasked with choosing the winner
+                    each day to ensure the story flowed properly, and providing daily writing tips to encouraged people
+                    to take part.</p>
+
+                <a href="#" class="button">View Project</a>
+            </div>
+        </div> -->
+
+        <!-- <div class="radio">
+            <img src="img/radio.png" alt="radio-img" class="radio__img">
+
+            <div class="radio__text">
                 <p>Live reads from NOVA presenters reflected the ever-evolving story of Jake in realtime, and encouraged
                     people to get involved to shape the story themselves.</p>
 
                 <a href="#" class="button">View Project</a>
             </div>
-        </div>
+        </div> -->
     </footer>
 
-
+    <script src="js/script.js"></script>
 </body>
 
 </html>
